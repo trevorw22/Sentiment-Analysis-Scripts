@@ -1,0 +1,73 @@
+# from tokenizer import tokenizer
+
+# sample = "This is a test, I am testing this applicaiton for Mr. Ward. don't "
+# c = tokenizer()
+# c.punktSplit(sample)
+
+
+# from stopWords import stopWords
+
+# sample = "This is a test. I am testing this applicaiton for Mr. Ward."
+# c = stopWords()
+# c.words(sample)
+# c.wordList()
+
+
+# from stemming import stemming
+
+# text = "It is very important to be pythonly while you are pythoning with python. All pythoners have pythoned poorly at least once."
+# c = stemming()
+# c.stemmer(text)
+
+
+
+# from chunker import chunker
+# from nltk.corpus import state_union
+
+# pattern = r"""Chunk: {<RB.?>*<VB.?>*<NNP>+<NN>?}"""
+# sample = state_union.raw("2006-GWBush.txt")
+# c = chunker()
+# c.chunker(sample, pattern)
+
+# Chinking can be done by just adding it to the pattern ex. r"""Chunk: {<.*>+}}<VB.?|IN|DT|TO>+{"""
+
+
+
+
+# NAMED ENTITY RECOGNITON
+# from entityRecognition import entityRecognition
+# from nltk.corpus import state_union
+
+# text = state_union.raw("2006-GWBush.txt")
+# c = entityRecognition()
+# c.entityRecogniton(text, 0)
+
+# NE Type and Examples
+# ORGANIZATION - Georgia-Pacific Corp., WHO
+# PERSON - Eddy Bonte, President Obama
+# LOCATION - Murray River, Mount Everest
+# DATE - June, 2008-06-29
+# TIME - two fifty a m, 1:30 p.m.
+# MONEY - 175 million Canadian Dollars, GBP 10.40
+# PERCENT - twenty pct, 18.75 %
+# FACILITY - Washington Monument, Stonehenge
+# GPE - South East Asia, Midlothian
+
+
+
+
+# from lemmatizer import lemmatizer
+# from nltk.corpus import state_union
+
+# text = "better"
+# c = lemmatizer()
+# c.lemmatizer(text, "a")
+
+
+
+# from synsets import synsets
+
+# text = "good"
+
+# c = synsets()
+# c.antonym(text)
